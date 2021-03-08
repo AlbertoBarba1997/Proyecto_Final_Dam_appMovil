@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".HorarioActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="20dp"
+        android:text="CLASES DISPONIBLES"
+        android:textSize="30dp"
+        android:textColor="@color/naranja_transparente"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="SELECCIONA UNA CLASE:"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="28dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:gravity="left"
+                    android:text="LUNES"
+                    android:textColor="@color/amarillo" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recicler_lunes"
+                    android:layout_width="377dp"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    tools:listitem="@layout/item_clase"
+                     />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:gravity="left"
+                    android:text="MARTES"
+                    android:textColor="@color/amarillo" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recicler_martes"
+                    android:layout_width="377dp"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    tools:listitem="@layout/item_clase"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:gravity="left"
+                    android:text="MIERCOLES"
+                    android:textColor="@color/amarillo" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recicler_miercoles"
+                    android:layout_width="377dp"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center"
+
+                    android:orientation="horizontal"
+                    tools:listitem="@layout/item_clase"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:gravity="left"
+                    android:text="JUEVES"
+                    android:textColor="@color/amarillo" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recicler_jueves"
+                    android:layout_width="377dp"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    tools:listitem="@layout/item_clase"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:gravity="left"
+                    android:text="VIERNES"
+                    android:textColor="@color/amarillo" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recicler_viernes"
+                    android:layout_width="377dp"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    tools:listitem="@layout/item_clase"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:gravity="left"
+                    android:text="SABADO"
+                    android:textColor="@color/amarillo" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recicler_sabado"
+                    android:layout_width="377dp"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    tools:listitem="@layout/item_clase"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

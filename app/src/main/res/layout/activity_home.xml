@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".HomeActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/foto_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/icons8_user_125px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/correo_tf"
+        android:layout_width="350dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:text="correo@gmail.com"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_tf" />
+
+    <TextView
+        android:id="@+id/nombre_tf"
+        android:layout_width="350dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:text="Nombre usuario"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foto_img" />
+
+    <ImageButton
+        android:id="@+id/ejercicios_bt"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="60dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correo_tf"
+        app:srcCompat="@drawable/icons8_bench_press_105px" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="152dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:text="HORARIO DE CLASES"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/ejercicios_bt"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horario_bt" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="160dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:text="RUTINAS DE EJERCICIOS"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ejercicios_bt" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="116dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="MIS RESERVAS"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reservas_bt" />
+
+    <ImageButton
+        android:id="@+id/horario_bt"
+        android:layout_width="118dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="40dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/ejercicios_bt"
+        app:layout_constraintHorizontal_bias="0.671"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correo_tf"
+        app:srcCompat="@drawable/icons8_timetable_115px" />
+
+    <ImageButton
+        android:id="@+id/reservas_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/icons8_qr_code_115px" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
